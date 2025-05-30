@@ -1,7 +1,7 @@
 const categories = [
-  { id: 1, label: "Лога" },
-  { id: 2, label: "3D Принт" },
-  { id: 3, label: "Циферблати" },
+  { id: 1, label: "Logo" },
+  { id: 2, label: "3D print" },
+  { id: 3, label: "Clock Faces" },
   { id: 4, label: "CUT & PRINT" },
 ];
 

@@ -10,36 +10,37 @@ const Home = () => {
         <div className="flex flex-col items-center justify-center md:flex-row gap-8 md:gap-16 lg:gap-24">
           <img
             src="/photo.png"
-            className="w-[200px] md:w-[330px] h-auto  hover:scale-105 transition-all duration-500"
+            className="w-[200px] md:w-[330px] h-auto hover:scale-105 transition-all duration-500"
             alt="Serafimov Photo"
           />
           <div className="flex flex-col items-center md:items-start justify-center gap-3">
-            <h1 className="text-gray-200 text-3xl md:text-4xl lg:text-5xl font-semibold text-center md:text-left">
-              Светлин <span className="text-blue-400">Серафимов</span>
+            <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-semibold text-center md:text-left [font-variant-ligatures:none]">
+              Svetlin <span className="text-blue-400">Serafimov</span>
             </h1>
             <h3 className="text-blue-400 text-xl md:text-2xl lg:text-3xl font-light text-center md:text-left bg-gradient-to-r">
-              FRONT END & DESIGN
+              FRONT END <span className="text-white">& DESIGN</span>
             </h3>
-            <p className="text-lg text-slate-400 text-center md:text-left text-pretty">
-              <span className="block mb-2">Здравейте, колеги!</span>
-              Аз съм начинаещ фронтенд разработчик, бакалавър по Компютърни
-              науки с дизайнерски усет и умения.{" "}
+            <p className="text-lg text-white text-center md:text-left text-pretty">
+              <span className="block mb-2">Hello there!</span>I am a junior
+              frontend developer, Bachelor of Computer Science with a sense and
+              skills for design.{" "}
               <span className="font-bold text-blue-400">
                 <br />
-                Работя с React, JavaScript и Tailwind, а за графичен дизайн
-                използвам CorelDRAW и Adobe Photoshop.
+                I work with React, JavaScript, and Tailwind, and for graphic
+                design I use CorelDRAW and Adobe Photoshop.
                 <br />
               </span>{" "}
-              Търся възможност да уча и да се развивам в позитивен екип, с който
-              заедно да растем и създаваме красиво и функционално съдържание.
+              I am looking for an opportunity to learn and grow in a positive
+              team, where we can develop together and create beautiful and
+              functional content.
             </p>
             <div className="flex gap-3 mt-2">
               <a
-                href="/Serafimov-Portfolio-BG.pdf"
+                href="/Serafimov-Portfolio-EN.pdf"
                 download
                 className="px-2 py-1 text-white bg-zinc-800 rounded-full text-xs md:text-sm hover:bg-blue-700 transition"
               >
-                Моето CV
+                My CV
               </a>
               <a
                 href="https://github.com/Serafimov-Dev/portfolio"
@@ -52,12 +53,13 @@ const Home = () => {
             </div>
           </div>
         </div>
+
         <motion.div
           initial={{ y: 0 }}
           animate={{ y: [0, 16, 0] }}
           transition={{ repeat: 2, duration: 1, ease: "easeInOut" }}
-          className="absolute left-1/2 -translate-x-1/2"
-          style={{ bottom: 32 }}
+          className="mx-auto flex justify-center"
+          style={{ marginTop: "2.5rem" }}
         >
           <svg
             width="32"

@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import { BiMenu } from "react-icons/bi";
 
 const sections = [
-  { id: "about", label: "За Мен" },
-  { id: "gallery", label: "Галерия" },
+  { id: "about", label: "About" },
+  { id: "gallery", label: "Gallery" },
   { id: "faq", label: "FAQ" },
-  { id: "contact", label: "Контакти" },
+  { id: "contact", label: "Contact" },
 ];
 
 const Nav = () => {
@@ -41,13 +41,13 @@ const Nav = () => {
   }, []);
 
   return (
-    <header className="fixed top-0 w-full backdrop-blur-md bg-blue-950/90 border-b border-gray-700 border-opacity-20 z-50">
+    <header className="fixed top-0 w-full backdrop-blur-md bg-blue-950/90  z-50">
       <nav className="max-w-7xl mx-auto py-6 px-6 lg:px-32 flex items-center justify-between text-white">
         <a
           href="#home"
-          className="inline-block text-xl md:text-2xl font-semibold text-gray-100 transition-all duration-300 transform hover:scale-105 font-sans [font-feature-settings:'liga'_off']"
+          className="inline-block text-xl md:text-2xl font-semibold text-gray-100 transition-all duration-300 transform hover:scale-105 font-sans [font-variant-ligatures:none]"
         >
-          Светлин <span className="text-blue-400">Серафимов</span>
+          Svetlin <span className="text-blue-400">Serafimov</span>
         </a>
 
         <ul className="hidden md:flex gap-10">

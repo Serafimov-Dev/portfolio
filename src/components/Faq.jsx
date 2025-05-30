@@ -3,23 +3,18 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const faqData = [
   {
-    question: "Колко време отне изработката на този сайт?",
-    answer:
-      "Една седмица, но свободното ми време за работа по него беше силно ограничено.",
+    question: "How would you define your level?",
+    answer: "Beginner, but eager to learn and grow.",
   },
   {
-    question: "На какво ниво бих се определил?",
-    answer: "Начинаещ, но с желание да уча и развивам.",
+    question: "Why did you choose frontend development?",
+    answer:
+      "Because it combines two things I’ve always liked – design and logical thinking. I enjoy seeing the results of my work, having a direct connection with the user, and creating things that are not just functional, but pleasant to use.",
   },
   {
-    question: "Защо избрах фронтенд разработката?",
+    question: "Are you ready to work full-time from an office?",
     answer:
-      "Винаги съм харесвал визуалната комуникация, било то печатна или дигитална.",
-  },
-  {
-    question: "Имам ли готовност да работя на пълен работен ден от офис?",
-    answer:
-      "Да, търся си сериозна и постоянна работа на пълен работен ден. Харесвам общуването с колеги и екипната работа.",
+      "Yes, I am looking for a serious and permanent full-time job. I enjoy communicating with colleagues and teamwork.",
   },
 ];
 
@@ -36,7 +31,7 @@ const Faq = () => {
       id="faq"
     >
       <h2 className="text-3xl md:text-4xl font-bold text-blue-800 text-center mb-8">
-        Въпроси и отговори
+        Questions & Answers
       </h2>
       <div className="w-full max-w-2xl mx-auto flex flex-col gap-4">
         {faqData.map((item, idx) => (

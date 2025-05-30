@@ -1,24 +1,24 @@
 import { useState } from "react";
 
 const tabs = [
-  { label: "За Мен", key: "about" },
-  { label: "Умения", key: "skills" },
-  { label: "Бъдеще", key: "future" },
-  { label: "За ИИ", key: "ai" },
+  { label: "About Me", key: "about" },
+  { label: "Skills", key: "skills" },
+  { label: "Future", key: "future" },
+  { label: "AI", key: "ai" },
 ];
 
 const tabContent = {
   about: {
-    text: "Предимно съм работил като обслужващ персонал във Видин. Градът не предлага много възможности за реализация, но интересът ми винаги е бил в технологиите и визуалното. Харесвам идеята трудът ми да оставя следа — нещо, което не изчезва след 30 минути.",
+    text: "I have always enjoyed visual communication. Frontend development allows me to combine creativity with logical thinking and build user-friendly solutions. Becoming part of the IT field feels like a natural progression of my interests and skills.",
   },
   skills: {
-    text: "Фокусиран съм върху React с js и Tailwind. Бих казал, че разбирам основните концепции, работя с компоненти, състояния, форми, props , условен рендеринг и други. Разбира се знам, че пътя е дълъг и има още много за надграждане.",
+    text: "I am focused on React with JS and Tailwind. I would say I understand the main concepts, work with components, state, forms, props, conditional rendering, and more. Of course, I know the journey is long and there is much more to learn.",
   },
   future: {
-    text: "В дългосрочен план планирам да надграждам уменията си и да уча нови технологии като Next.js, който харесвам заради простотата и удобната организация. Искам да мастерирам и Tailwind – обичам го заради гъвкавостта и бързината, с която се работи.",
+    text: "In the long term, I want to develop my skills by learning new technologies like Next.js, which I like for its simplicity and good organization. I also want to deepen my knowledge of Tailwind, which I really enjoy using.",
   },
   ai: {
-    text: "Използвам активно AI инструменти и вярвам, че те са бъдещето на дигиталната разработка. Прилагам ги ежедневно – за учене, идеи и по-бързи решения. В програмирането се доверявам се на Copilot, но гледам да не губя контрол над кода.",
+    text: "I actively use AI tools and believe they are the future of digital development. I apply them daily – for learning, ideas, and faster solutions. I believe that integrating AI into my workflow will help me create higher quality and more innovative solutions.",
   },
 };
 
@@ -32,9 +32,9 @@ const About = () => {
     >
       <div className="mx-auto max-w-6xl w-full p-4 md:p-8 lg:p-28 py-16">
         <h2 className="text-3xl md:text-4xl font-bold text-blue-800 text-center mb-8">
-          Малко повече за мен
+          A Little More About Me
         </h2>
-        <div className="flex justify-center gap-2 md:gap-4 mb-8">
+        <div className="flex flex-wrap gap-2 md:gap-4 justify-center mb-8">
           {tabs.map((tab) => {
             const isActive = activeTab === tab.key;
             return (
@@ -60,13 +60,16 @@ const About = () => {
         </div>
         <hr className="my-10 border-slate-500 w-full max-w-3xl mx-auto" />
         <p className="text-blue-800 text-lg md:text-xl text-center max-w-3xl mx-auto">
-          Въпреки че тепърва навлизам във фронтенд разработката и все още нямам
-          завършени проекти, с това портфолио искам да покажа какво мога.
+          Although I am just starting out in frontend development and do not yet
+          have completed projects, with this portfolio I want to show what I can
+          do.
           <br />
-          Фокусът тук е върху галерия с дизайни, които съм създавал през
-          последните 10 години. Данните се зареждат от външен JSON, поддържа се
-          филтриране по категории, визуализиране на рейтинг а при модално
-          отваряне се показват и детайлите за дизайна.
+          The main focus of my portfolio is a gallery of graphic designs created
+          by me over the last 10 years as a hobby or for direct clients. The
+          gallery loads data from an external JSON with fetch and useEffect and
+          allows filtering by categories. When clicked, a modal opens with a
+          detailed overview and navigation via arrows, keyboard and gestures.
+          When the modal is open, scrolling is blocked to maintain focus.
         </p>
       </div>
     </div>

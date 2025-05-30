@@ -18,7 +18,7 @@ const ContactForm = () => {
       )
       .then(
         () => setSent(true),
-        () => setError("Грешка при изпращане. Опитайте пак.")
+        () => setError("An error occurred. Please try again.")
       );
   };
 
@@ -28,8 +28,8 @@ const ContactForm = () => {
       id="contact"
     >
       <p className="max-w-2xl text-blue-100 text-center mb-8 leading-relaxed text-xl font-light">
-        Ако портфолиото ми Ви е заинтригувало, можете да се свържете с мен чрез
-        контактната форма или да се чуем по телефон.
+        I'm currently looking for opportunities to grow as a frontend developer.
+        Feel free to get in touch if my work resonates with you.
       </p>
       <div className="mx-auto max-w-2xl w-full p-6 md:p-12 lg:p-16 bg-white/90 rounded-3xl border border-blue-900/10 shadow-2xl backdrop-blur-md">
         <form
@@ -44,7 +44,7 @@ const ContactForm = () => {
                 type="text"
                 name="user_name"
                 required
-                placeholder="Вашето име"
+                placeholder="Your name"
                 className="px-5 py-3 rounded-2xl border-none bg-blue-50 focus:ring-2 focus:ring-blue-400 text-blue-900 placeholder-blue-800 transition-all shadow-md focus:shadow-xl w-full max-w-xl text-center"
               />
             </div>
@@ -54,7 +54,7 @@ const ContactForm = () => {
                 type="email"
                 name="user_email"
                 required
-                placeholder="Вашият имейл"
+                placeholder="Your email"
                 className="px-5 py-3 rounded-2xl border-none bg-blue-50 focus:ring-2 focus:ring-blue-400 text-blue-900 placeholder-blue-800 transition-all shadow-md focus:shadow-xl w-full max-w-xl text-center"
               />
             </div>
@@ -63,7 +63,7 @@ const ContactForm = () => {
                 id="message"
                 name="message"
                 required
-                placeholder="Вашето съобщение..."
+                placeholder="Your message..."
                 rows={5}
                 className="px-5 py-3 rounded-2xl border-none bg-blue-50 focus:ring-2 focus:ring-blue-400 text-blue-900 placeholder-blue-800 transition-all shadow-md focus:shadow-xl w-full max-w-xl text-center resize-none"
               />
@@ -76,18 +76,18 @@ const ContactForm = () => {
               active:bg-blue-900 active:from-blue-900 active:to-blue-700
               focus:outline-none focus:ring-2 focus:ring-blue-400"
           >
-            Изпрати
+            Send
           </button>
           {sent && (
             <p className="text-green-600 text-center mt-2">
-              Съобщението е изпратено успешно!
+              Your message has been sent successfully!
             </p>
           )}
           {error && <p className="text-red-500 text-center mt-2">{error}</p>}
         </form>
         <div className="mt-10 text-center text-blue-900/90">
           <div className="mb-2">
-            <span className="font-semibold">Имейл:</span>{" "}
+            <span className="font-semibold">Email:</span>{" "}
             <a
               href="mailto:serafimov.dev@gmail.com"
               className="font-semibold hover:underline"
@@ -96,12 +96,12 @@ const ContactForm = () => {
             </a>
           </div>
           <div>
-            <span className="font-semibold">Телефон:</span>{" "}
+            <span className="font-semibold">Phone:</span>{" "}
             <a
               href="tel:+359888123456"
               className="font-semibold hover:underline"
             >
-              0988 30 76 58
+              +359 988 307 658
             </a>
           </div>
         </div>
